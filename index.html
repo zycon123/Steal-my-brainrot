@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Weather Dashboard</h1>
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Enter city name..."
+                    aria-label="Search for a city"
+                >
+                <button id="searchBtn">Search</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Current Weather Section -->
+            <section class="current-weather" id="currentWeather">
+                <div class="loading">Loading weather data...</div>
+            </section>
+
+            <!-- Hourly Forecast Section -->
+            <section class="forecast-section">
+                <h2>Hourly Forecast</h2>
+                <div class="hourly-forecast" id="hourlyForecast">
+                    <div class="loading">Loading forecast...</div>
+                </div>
+            </section>
+
+            <!-- 7-Day Forecast Section -->
+            <section class="forecast-section">
+                <h2>7-Day Forecast</h2>
+                <div class="daily-forecast" id="dailyForecast">
+                    <div class="loading">Loading forecast...</div>
+                </div>
+            </section>
+
+            <!-- Additional Details -->
+            <section class="details-section" id="detailsSection">
+                <div class="loading">Loading additional data...</div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+            <p id="lastUpdated"></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
